@@ -66,7 +66,7 @@ class PostController extends Controller
 
     // Use Carbon to parse and format the dates
     $announcementStart = $attributes['announcement_start'] ? Carbon::parse($attributes['announcement_start']) : null;
-    $announcementEnd = $attributes['announcement_end'] ? Carbon::parse($attributes['announcement_end']) : null;
+    $announcementEnd = $attributes['announcement_end'] ? Carbon::parse($attributes['announcement_end'] . ' 23:59:59') : null;
 
     if ($announcementStart && $announcementEnd) {
         // Determine the status based on the dates
