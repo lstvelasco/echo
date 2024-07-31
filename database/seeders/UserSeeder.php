@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
         User::factory()->create([
             'first_name' => 'Ronjie',
             'middle_name' => 'Leal',
-            'last_name' => 'Magcamit',
+            'last_name' => 'Malinao',
             'birthday' => fake()->dateTimeBetween('-20 years', 'now'),
             'identity_verified' => true,
             'gender' => 'Male',
