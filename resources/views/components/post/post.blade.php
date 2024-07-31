@@ -86,7 +86,7 @@
                         </button>
                         <div x-show="showReplyBox" class="mt-2">
                             <x-post.comment-box buttonLabel="Reply" type="reply" placeholder="Write a reply..."
-                                targetId="{{ $comment->id }}" targetAuthorId="{{ $post->author_id }}"
+                                targetId="{{ $comment->id }}" targetAuthorId="{{ $comment->user->id }}"
                                 postId="{{ $post->id }}"></x-post.comment-box>
                         </div>
                     @endauth
